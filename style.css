@@ -236,13 +236,11 @@ a{-webkit-tap-highlight-color:transparent}
 .portrait{margin:0 0 1.75rem;max-width:20rem}
 .portrait .cadre{aspect-ratio:3/4}
 
-.adresses{
-  display:grid;gap:1.5rem 3rem;
-  grid-template-columns:repeat(auto-fit,minmax(min(100%,13rem),1fr));
-}
+.adresses{display:grid;gap:1.25rem;grid-template-columns:1fr;max-width:32rem}
 .adresses p{margin:0}
 .adresses .genre{display:block;color:var(--gris);font-size:.88rem;margin-bottom:.2rem}
 .adresses a{font-weight:400;font-size:1.05rem;text-decoration-color:var(--filet)}
+.adresses a:hover,.adresses a:active{color:var(--vif);text-decoration-color:var(--vif)}
 
 @media (prefers-reduced-motion:reduce){
   *,*::before,*::after{animation-duration:.01ms !important;transition-duration:.01ms !important}
