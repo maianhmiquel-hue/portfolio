@@ -8,6 +8,7 @@
   --encre:#000000;
   --gris:#8A8A8A;
   --filet:#E2E2E2;
+  --vif:#0033FF;
 
   --sans:"Inter","Helvetica Neue",Arial,sans-serif;
 
@@ -31,11 +32,12 @@ body{
 
 /* Aucun lien ne prend la couleur système du navigateur, dans aucun
    de ses états. */
-a,a:link,a:visited,a:hover,a:active,a:focus{color:inherit}
+a,a:link,a:visited{color:inherit}
+a:hover,a:active{color:var(--vif)}
 a{text-decoration-thickness:1px;text-underline-offset:.18em}
 a{-webkit-tap-highlight-color:transparent}
 ::selection{background:var(--encre);color:var(--papier)}
-:focus-visible{outline:1px solid var(--encre);outline-offset:3px}
+:focus-visible{outline:1px solid var(--vif);outline-offset:3px}
 
 /* ==================================================================
    ARMATURE, nom à gauche, contenu et navigation à droite
@@ -69,6 +71,7 @@ a{-webkit-tap-highlight-color:transparent}
   letter-spacing:-.015em;
 }
 .nom a{text-decoration:none;display:block}
+.nom a:hover,.nom a:active{color:var(--vif)}
 .nom span{display:block}
 @media (max-width:56rem){
   .nom span{display:inline}
@@ -89,23 +92,15 @@ a{-webkit-tap-highlight-color:transparent}
   letter-spacing:-.015em;
 }
 .menu a{text-decoration:none;color:var(--gris)}
-.menu a:hover{color:var(--encre)}
+.menu a:hover,.menu a:active{color:var(--vif)}
 .menu a[aria-current="page"],
 .menu a[aria-current="true"]{color:var(--encre)}
 
 .menu-second{display:flex;gap:1.25rem;flex-wrap:wrap;font-size:.95rem;color:var(--gris)}
 .menu-second a{text-decoration:none}
-.menu-second a:hover{color:var(--encre)}
+.menu-second a:hover,.menu-second a:active{color:var(--vif)}
 .menu-second a[aria-current="page"]{color:var(--encre)}
 
-.rappel{
-  display:flex;gap:1.5rem;justify-content:flex-start;
-  margin-top:clamp(3rem,8vw,5rem);padding-top:1.25rem;
-  font-size:.95rem;
-}
-@media (min-width:56rem){.rappel{justify-content:flex-end}}
-.rappel a{text-decoration:none;color:var(--gris)}
-.rappel a:hover{color:var(--encre)}
 
 /* ==================================================================
    CONTENU
@@ -154,7 +149,10 @@ a{-webkit-tap-highlight-color:transparent}
   line-height:1.12;letter-spacing:-.015em;
 }
 .projet > summary:hover .intitule,
-.projet > summary:focus-visible .intitule{color:var(--gris)}
+.projet > summary:active .intitule,
+.projet > summary:focus-visible .intitule{color:var(--vif)}
+.projet > summary:hover .croix,
+.projet > summary:active .croix{color:var(--vif)}
 
 .reperes{grid-column:2/-1;color:var(--gris);font-size:.92rem}
 @media (min-width:52rem){
@@ -204,7 +202,7 @@ a{-webkit-tap-highlight-color:transparent}
   .ecrits a,.ecrits .sans-lien{grid-template-columns:minmax(0,1fr) 11rem 4.5rem;align-items:baseline;gap:1.5rem}
 }
 .ecrits .titre-texte{font-size:1.1rem;font-weight:400;line-height:1.35}
-.ecrits a:hover .titre-texte{color:var(--gris)}
+.ecrits a:hover .titre-texte,.ecrits a:active .titre-texte{color:var(--vif)}
 .ecrits .support,.ecrits .date{color:var(--gris);font-size:.92rem}
 @media (min-width:52rem){.ecrits .date{text-align:right}}
 
