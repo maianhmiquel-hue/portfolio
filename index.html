@@ -10,7 +10,7 @@
 <meta property="og:type" content="website">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 </head>
 
@@ -29,19 +29,18 @@
 
     <div class="rail">
       <nav class="menu" aria-label="Main navigation">
-        <a href="index.html" aria-current="page">Work</a>
+        <a href="index.html" aria-current="true">Work</a>
         <a href="about.html">About</a>
       </nav>
-      <nav class="menu-second" aria-label="Sections on this page">
-        <a href="#design">Design</a>
-        <a href="#writing">Writing &amp; Curating</a>
+      <nav class="menu-second" aria-label="Work sections">
+        <a href="index.html" aria-current="page">Design</a>
+        <a href="writing.html">Writing &amp; Curating</a>
       </nav>
     </div>
 
     <main>
 
-      <!-- ================= DESIGN ================= -->
-      <section class="groupe" id="design">
+      <section class="groupe">
         <h2 class="titre-section">Design</h2>
 
         <p class="vide">In progress.</p>
@@ -86,59 +85,9 @@
 
       </section>
 
-      <!-- ================= WRITING & CURATING ================= -->
-      <section class="groupe" id="writing">
-        <h2 class="titre-section">Writing &amp; Curating</h2>
-
-        <h3 class="titre-sous-section">Writing</h3>
-        <p class="vide">In progress.</p>
-
-        <!-- ==========================================================
-             MODÈLE DE LISTE DE TEXTES
-             Une balise <li> par texte. Sans lien vers l'article,
-             remplacer <a href="..."> par <span class="sans-lien">
-             et la fermeture </a> par </span>.
-
-        <ul class="ecrits">
-          <li>
-            <a href="https://article-url">
-              <span class="titre-texte">Title of the piece</span>
-              <span class="support">Publication</span>
-              <span class="date">Year</span>
-            </a>
-          </li>
-        </ul>
-
-        ========================================================== -->
-
-        <h3 class="titre-sous-section">Curating</h3>
-        <p class="vide">In progress.</p>
-
-        <!-- ==========================================================
-             MODÈLE DE NOTICE D'EXPOSITION
-
-        <article class="notice">
-          <div>
-            <h4>Exhibition title</h4>
-            <p>Description.</p>
-            <p class="mention">Venue, city. Dates.</p>
-          </div>
-          <figure class="planche">
-            <span class="cadre">
-              <img src="images/file-name.jpg" alt="Image description" onerror="this.classList.add('absente')">
-              <span class="consigne">Add images/file-name.jpg</span>
-            </span>
-            <figcaption class="legende">Caption</figcaption>
-          </figure>
-        </article>
-
-        ========================================================== -->
-
-      </section>
-
     </main>
 
-    <nav class="rappel" aria-label="Navigation, bas de page">
+    <nav class="rappel" aria-label="Footer navigation">
       <a href="index.html">Work</a>
       <a href="about.html">About</a>
     </nav>
