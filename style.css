@@ -95,11 +95,15 @@ a{-webkit-tap-highlight-color:transparent}
 .menu a:hover,.menu a:active{color:var(--vif)}
 .menu a[aria-current="page"],
 .menu a[aria-current="true"]{color:var(--encre)}
+.menu a[aria-current]:hover,
+.menu a[aria-current]:active{color:var(--vif)}
 
 .menu-second{display:flex;gap:1.25rem;flex-wrap:wrap;font-size:.95rem;color:var(--gris)}
 .menu-second a{text-decoration:none}
 .menu-second a:hover,.menu-second a:active{color:var(--vif)}
 .menu-second a[aria-current="page"]{color:var(--encre)}
+.menu-second a[aria-current]:hover,
+.menu-second a[aria-current]:active{color:var(--vif)}
 
 
 /* ==================================================================
