@@ -80,7 +80,7 @@ a{-webkit-tap-highlight-color:transparent}
 
 /* ---------- Navigation, en haut à droite ---------- */
 .rail{
-  display:flex;flex-direction:column;align-items:flex-start;gap:.45rem;
+  display:flex;flex-direction:column;align-items:flex-start;gap:.15rem;
   margin-bottom:clamp(2rem,6vw,4rem);
 }
 @media (min-width:56rem){.rail{align-items:flex-end}}
@@ -98,7 +98,13 @@ a{-webkit-tap-highlight-color:transparent}
 .menu a[aria-current]:hover,
 .menu a[aria-current]:active{color:var(--vif)}
 
-.menu-second{display:flex;gap:1.25rem;flex-wrap:wrap;font-size:.95rem;color:var(--gris)}
+.menu-second{
+  display:flex;gap:1.75rem;flex-wrap:wrap;
+  font-weight:400;
+  font-size:clamp(1.2rem,2.4vw,1.6rem);
+  letter-spacing:-.015em;
+  color:var(--gris);
+}
 .menu-second a{text-decoration:none}
 .menu-second a:hover,.menu-second a:active{color:var(--vif)}
 .menu-second a[aria-current="page"]{color:var(--encre)}
@@ -236,10 +242,9 @@ a{-webkit-tap-highlight-color:transparent}
 .portrait{margin:0 0 1.75rem;max-width:20rem}
 .portrait .cadre{aspect-ratio:3/4}
 
-.adresses{display:grid;gap:1.25rem;grid-template-columns:1fr;max-width:32rem}
-.adresses p{margin:0}
-.adresses .genre{display:block;color:var(--gris);font-size:.88rem;margin-bottom:.2rem}
-.adresses a{font-weight:400;font-size:1.05rem;text-decoration-color:var(--filet)}
+.adresses{display:grid;gap:.6rem;grid-template-columns:1fr;max-width:32rem}
+.adresses p{margin:0;font-size:1.05rem}
+.adresses a{text-decoration-color:var(--filet)}
 .adresses a:hover,.adresses a:active{color:var(--vif);text-decoration-color:var(--vif)}
 
 @media (prefers-reduced-motion:reduce){
