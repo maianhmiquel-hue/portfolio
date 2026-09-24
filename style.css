@@ -92,17 +92,19 @@ a{-webkit-tap-highlight-color:transparent}
   font-size:clamp(1.2rem,2.4vw,1.6rem);
   letter-spacing:-.015em;
 }
-.menu a,.menu label{text-decoration:none;color:var(--gris)}
-.menu label{cursor:pointer}
+.menu a,.menu button{text-decoration:none;color:var(--gris)}
+.menu button{
+  font:inherit;letter-spacing:inherit;
+  background:none;border:0;padding:0;margin:0;cursor:pointer;
+}
 .menu .actif{color:var(--encre)}
 .menu a:hover,.menu a:active,
-.menu label:hover,.menu label:active{color:var(--vif)}
+.menu button:hover,.menu button:active{color:var(--vif)}
 
-/* Bascule de la seconde ligne, sans JavaScript. */
-.bascule{position:absolute;width:1px;height:1px;opacity:0;margin:0}
+/* Seconde ligne, masquée jusqu'au premier clic sur Work.
+   L'état est conservé d'une page à l'autre. */
 .menu-second{display:none}
-.bascule:checked ~ .menu-second{display:flex}
-.bascule:focus-visible ~ .menu label{outline:1px solid var(--vif);outline-offset:3px}
+.nav-ouverte .menu-second{display:flex}
 
 .menu-second{
   gap:1.75rem;flex-wrap:wrap;
