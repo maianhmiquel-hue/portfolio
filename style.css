@@ -87,6 +87,17 @@ a{-webkit-tap-highlight-color:transparent}
 }
 @media (min-width:56rem){.rail{align-items:flex-end}}
 
+/* Variante des pages de projet : le titre à gauche, la navigation à
+   droite, sur la même ligne. */
+.rail.avec-titre .bloc-nav{display:flex;flex-direction:column;align-items:flex-start;gap:.15rem;order:-1}
+@media (min-width:56rem){
+  .rail.avec-titre{
+    flex-direction:row;align-items:flex-start;justify-content:space-between;
+    gap:2rem;
+  }
+  .rail.avec-titre .bloc-nav{align-items:flex-end;order:0}
+}
+
 .menu,.menu-second{pointer-events:auto}
 
 .menu{
@@ -224,7 +235,7 @@ a{-webkit-tap-highlight-color:transparent}
   font-weight:400;
   font-size:clamp(1.2rem,2.4vw,1.6rem);
   line-height:1.15;letter-spacing:-.015em;
-  margin:0 0 clamp(1.5rem,4vw,2.25rem);
+  margin:0;
 }
 .fiche-infos{font-size:.95rem;color:var(--gris)}
 .fiche-infos p{margin:0}
@@ -232,6 +243,8 @@ a{-webkit-tap-highlight-color:transparent}
 .fiche-texte p:last-child{margin-bottom:0}
 .fiche-texte a{text-decoration:underline;text-decoration-color:var(--filet)}
 .fiche-texte a:hover,.fiche-texte a:active{color:var(--vif);text-decoration-color:var(--vif)}
+.ouverture{margin:0 0 clamp(2.5rem,6vw,4rem)}
+.ouverture .cadre{aspect-ratio:3/2}
 .serie{display:grid;gap:1rem;margin-top:clamp(2.5rem,6vw,4rem)}
 .serie .cadre{aspect-ratio:3/2}
 
