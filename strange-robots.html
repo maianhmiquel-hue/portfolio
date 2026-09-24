@@ -4,9 +4,9 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>ALICE MIQUEL</title>
-<meta name="description" content="">
+<meta name="description" content="Strange Robots, a master's thesis on bio-hybrid machines, insurrectional technology and our relationship with the living.">
 <meta property="og:title" content="ALICE MIQUEL">
-<meta property="og:description" content="">
+<meta property="og:description" content="Strange Robots, 2026, master's thesis.">
 <meta property="og:type" content="article">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -15,17 +15,21 @@
 <link rel="icon" href="favicon.png" sizes="any">
 <link rel="apple-touch-icon" href="favicon.png">
 <link rel="stylesheet" href="style.css">
-<script>try{if(localStorage.getItem('nav')==='open')document.documentElement.classList.add('nav-ouverte')}catch(e){}</script>
 </head>
 
 <body>
 <div class="armature">
 
-  <!-- ================= COLONNE DE GAUCHE, LE NOM ================= -->
+  <!-- ================= COLONNE DE GAUCHE ================= -->
   <header class="flanc">
     <h1 class="nom">
       <a href="index.html"><span>Alice</span><span>Miquel</span></a>
     </h1>
+
+    <div class="fiche-infos">
+      <p>2026, Master's thesis</p>
+      <p>Supervised by Audrey Brugnoli</p>
+    </div>
   </header>
 
   <!-- ================= COLONNE DE DROITE ================= -->
@@ -33,47 +37,50 @@
 
     <div class="rail">
       <nav class="menu" aria-label="Main navigation">
-        <button type="button" id="bascule" class="actif" aria-controls="sous-menu" aria-expanded="false">Work</button>
+        <a href="index.html">Work</a>
         <a href="about.html">About</a>
       </nav>
-      <nav class="menu-second" id="sous-menu" aria-label="Work sections">
-        <a href="index.html">Design</a>
-        <a href="writing.html" aria-current="page">Writing</a>
-        <a href="curating.html">Curating</a>
+      <nav class="menu-second toujours" aria-label="Back">
+        <a href="writing.html">Back</a>
       </nav>
     </div>
 
     <main>
 
-      <!-- Lien de retour. Changer la destination selon la section
-           d'origine : index.html, writing.html ou curating.html. -->
-      <a class="retour" href="writing.html">Back</a>
 
-      <!-- ================= TITRE ET INFORMATIONS ================= -->
       <h2 class="fiche-titre">Strange Robots</h2>
-      <p class="fiche-meta">2026, Master's thesis</p>
 
       <div class="fiche-texte">
-        <p>Première partie de la description.</p>
-        <p>Seconde partie de la description.</p>
+        <p>Machines today learn from data, adapt to their context and produce answers that were never entirely written in advance. Industrial and interaction design, however, still largely rest on an ideal of control and transparency, in which a good object works without resistance, answers immediately and disappears behind its function. Strange Robots starts from another figure, the “insurrectional machine” described by the philosopher Dominique Lestel: a machine that resists, surprises and forces the person facing it to negotiate rather than simply command. Conversational agents, social robots and even a software bug already place us in this position, even though the relationship remains largely unnoticed.</p>
+
+        <p>At a time when the ecological crisis calls into question the clear separation between humans and the rest of the living world, the thesis brings these two transformations together through two mirrored questions. How could a different way of designing machines change our relationship to the living? And how could introducing living matter into a technological object change the way we perceive the machine?</p>
+
+        <p>The theoretical part first examines technology as a project for the world, through a critique of innovation as a rational utopia, of the material paradoxes of technical progress and of the exhaustion of technological imaginaries, with fiction and critical design proposed as ways of reopening them. It then traces the history of our relationship with machines, from automata and cybernetics to contemporary robotics, and considers objects as mediators that transform the relationships they take part in. From this perspective, design moves away from controlling an object's effects and towards creating the conditions for a relationship whose forms can evolve over time.</p>
+
+        <!-- Le lien ci-dessous pointe vers la page Design. Remplacer la
+             destination par la fiche du robot une fois celle-ci créée. -->
+        <p>Following a research-through-design approach, this reflection took shape in a <a href="index.html">bio-hybrid robot</a> combining textile, living mycelium and a language model, designed as a situation of encounter rather than a functional object. Sixteen participants met the robot individually, and each encounter was followed by an interview, then analysed through a qualitative coding method.</p>
+
+        <p>The encounters reveal a gradual shift. Most participants first look for a mechanism and a function, and the absence of a clear use produces a form of disorientation. The object is then compared to a machine, a robot, an insect or an animal, and received sometimes as an artwork, sometimes as an industrial object. The textile acts as the main point of access, inviting touch and evoking a body or a skin, while the mycelium introduces a discreet form of life whose status remains open to interpretation. Once its presence is revealed, questions of life, intention and relationship come to the fore, and a sense of otherness emerges in the loop between gesture and response. The encounters do not lead to a shared definition of the object, but to a plurality of relationships, and every participant chose to keep the text printed for them.</p>
+
+        <p>The research thus shifts the question of what a machine is towards what it could be, while questioning what we mean by being alive. In a context where artificial intelligence is concentrating technological power in the hands of a few actors, bio-hybrid technologies appear as one way of exploring other relationships with technology and the living, and other ways of being a machine.</p>
       </div>
 
       <!-- ================= SÉRIE D'IMAGES =================
-           Dupliquer un bloc <figure> par image supplémentaire.
-           Les images s'empilent sur toute la largeur. -->
+           Dupliquer un bloc <figure> par image supplémentaire. -->
       <div class="serie">
 
         <figure class="planche">
           <span class="cadre">
-            <img src="images/fiche-01.jpg" alt="" onerror="this.classList.add('absente')">
-            <span class="consigne">Add images/fiche-01.jpg</span>
+            <img src="images/strange-robots-01.jpg" alt="" onerror="this.classList.add('absente')">
+            <span class="consigne">Add images/strange-robots-01.jpg</span>
           </span>
         </figure>
 
         <figure class="planche">
           <span class="cadre">
-            <img src="images/fiche-02.jpg" alt="" onerror="this.classList.add('absente')">
-            <span class="consigne">Add images/fiche-02.jpg</span>
+            <img src="images/strange-robots-02.jpg" alt="" onerror="this.classList.add('absente')">
+            <span class="consigne">Add images/strange-robots-02.jpg</span>
           </span>
         </figure>
 
@@ -85,18 +92,5 @@
 
 </div>
 
-<script>
-(function(){
-  var b=document.getElementById('bascule'),h=document.documentElement;
-  if(!b)return;
-  function sync(){b.setAttribute('aria-expanded',h.classList.contains('nav-ouverte')?'true':'false')}
-  sync();
-  b.addEventListener('click',function(){
-    var ouvert=h.classList.toggle('nav-ouverte');
-    try{localStorage.setItem('nav',ouvert?'open':'closed')}catch(e){}
-    sync();
-  });
-})();
-</script>
 </body>
 </html>
