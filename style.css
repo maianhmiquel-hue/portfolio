@@ -13,7 +13,7 @@
   --sans:"Inter","Helvetica Neue",Arial,sans-serif;
 
   --pas:clamp(1.25rem,4vw,3rem);
-  --colonne:15rem;
+  --colonne:12.5rem;
 }
 
 *,*::before,*::after{box-sizing:border-box}
@@ -53,7 +53,7 @@ a{-webkit-tap-highlight-color:transparent}
 @media (min-width:56rem){
   .armature{
     grid-template-columns:var(--colonne) minmax(0,1fr);
-    gap:clamp(2.5rem,6vw,6rem);
+    gap:clamp(1.75rem,3.5vw,3rem);
     align-items:start;
   }
 }
@@ -225,7 +225,7 @@ a{-webkit-tap-highlight-color:transparent}
 .legende{margin-top:.5rem;font-size:.88rem;color:var(--gris)}
 
 /* ---------- Grille de vignettes, trois par ligne ---------- */
-.grille{display:grid;gap:.75rem;grid-template-columns:repeat(2,1fr)}
+.grille{display:grid;gap:clamp(1rem,2.5vw,2rem);grid-template-columns:repeat(2,1fr)}
 @media (min-width:52rem){.grille{grid-template-columns:repeat(3,1fr)}}
 .tuile{display:block;text-decoration:none}
 .tuile .cadre{aspect-ratio:1/1;transition:opacity .25s ease}
@@ -247,7 +247,7 @@ a{-webkit-tap-highlight-color:transparent}
 .fiche-texte a:hover,.fiche-texte a:active{color:var(--vif);text-decoration-color:var(--vif)}
 .ouverture{margin:0 0 clamp(2.5rem,6vw,4rem)}
 .ouverture .cadre{aspect-ratio:3/2}
-.serie{display:grid;gap:1rem;margin-top:clamp(2.5rem,6vw,4rem)}
+.serie{display:grid;gap:clamp(1rem,2.5vw,2rem);margin-top:clamp(2.5rem,6vw,4rem)}
 .serie .cadre{aspect-ratio:3/2}
 
 /* ---------- Liste de textes ---------- */
