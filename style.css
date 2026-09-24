@@ -80,6 +80,7 @@ a{-webkit-tap-highlight-color:transparent}
 
 /* ---------- Navigation, en haut à droite ---------- */
 .rail{
+  position:relative;
   display:flex;flex-direction:column;align-items:flex-start;gap:.15rem;
   margin-bottom:clamp(2rem,6vw,4rem);
 }
@@ -91,15 +92,20 @@ a{-webkit-tap-highlight-color:transparent}
   font-size:clamp(1.2rem,2.4vw,1.6rem);
   letter-spacing:-.015em;
 }
-.menu a{text-decoration:none;color:var(--gris)}
-.menu a:hover,.menu a:active{color:var(--vif)}
-.menu a[aria-current="page"],
-.menu a[aria-current="true"]{color:var(--encre)}
-.menu a[aria-current]:hover,
-.menu a[aria-current]:active{color:var(--vif)}
+.menu a,.menu label{text-decoration:none;color:var(--gris)}
+.menu label{cursor:pointer}
+.menu .actif{color:var(--encre)}
+.menu a:hover,.menu a:active,
+.menu label:hover,.menu label:active{color:var(--vif)}
+
+/* Bascule de la seconde ligne, sans JavaScript. */
+.bascule{position:absolute;width:1px;height:1px;opacity:0;margin:0}
+.menu-second{display:none}
+.bascule:checked ~ .menu-second{display:flex}
+.bascule:focus-visible ~ .menu label{outline:1px solid var(--vif);outline-offset:3px}
 
 .menu-second{
-  display:flex;gap:1.75rem;flex-wrap:wrap;
+  gap:1.75rem;flex-wrap:wrap;
   font-weight:400;
   font-size:clamp(1.2rem,2.4vw,1.6rem);
   letter-spacing:-.015em;
