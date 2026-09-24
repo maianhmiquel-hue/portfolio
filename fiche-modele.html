@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ALICE MIQUEL</title>
+<meta name="description" content="">
+<meta property="og:title" content="ALICE MIQUEL">
+<meta property="og:description" content="">
+<meta property="og:type" content="article">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="icon" href="favicon.png" sizes="any">
+<link rel="apple-touch-icon" href="favicon.png">
+<link rel="stylesheet" href="style.css">
+<script>try{if(localStorage.getItem('nav')==='open')document.documentElement.classList.add('nav-ouverte')}catch(e){}</script>
+</head>
+
+<body>
+<div class="armature">
+
+  <!-- ================= COLONNE DE GAUCHE, LE NOM ================= -->
+  <header class="flanc">
+    <h1 class="nom">
+      <a href="index.html"><span>Alice</span><span>Miquel</span></a>
+    </h1>
+  </header>
+
+  <!-- ================= COLONNE DE DROITE ================= -->
+  <div class="corps">
+
+    <div class="rail">
+      <nav class="menu" aria-label="Main navigation">
+        <button type="button" id="bascule" class="actif" aria-controls="sous-menu" aria-expanded="false">Work</button>
+        <a href="about.html">About</a>
+      </nav>
+      <nav class="menu-second" id="sous-menu" aria-label="Work sections">
+        <a href="index.html">Design</a>
+        <a href="writing.html" aria-current="page">Writing</a>
+        <a href="curating.html">Curating</a>
+      </nav>
+    </div>
+
+    <main>
+
+      <!-- Lien de retour. Changer la destination selon la section
+           d'origine : index.html, writing.html ou curating.html. -->
+      <a class="retour" href="writing.html">Back</a>
+
+      <!-- ================= TITRE ET INFORMATIONS ================= -->
+      <h2 class="fiche-titre">Strange Robots</h2>
+      <p class="fiche-meta">2026, Master's thesis</p>
+
+      <div class="fiche-texte">
+        <p>Première partie de la description.</p>
+        <p>Seconde partie de la description.</p>
+      </div>
+
+      <!-- ================= SÉRIE D'IMAGES =================
+           Dupliquer un bloc <figure> par image supplémentaire.
+           Les images s'empilent sur toute la largeur. -->
+      <div class="serie">
+
+        <figure class="planche">
+          <span class="cadre">
+            <img src="images/fiche-01.jpg" alt="" onerror="this.classList.add('absente')">
+            <span class="consigne">Add images/fiche-01.jpg</span>
+          </span>
+        </figure>
+
+        <figure class="planche">
+          <span class="cadre">
+            <img src="images/fiche-02.jpg" alt="" onerror="this.classList.add('absente')">
+            <span class="consigne">Add images/fiche-02.jpg</span>
+          </span>
+        </figure>
+
+      </div>
+
+    </main>
+
+  </div>
+
+</div>
+
+<script>
+(function(){
+  var b=document.getElementById('bascule'),h=document.documentElement;
+  if(!b)return;
+  function sync(){b.setAttribute('aria-expanded',h.classList.contains('nav-ouverte')?'true':'false')}
+  sync();
+  b.addEventListener('click',function(){
+    var ouvert=h.classList.toggle('nav-ouverte');
+    try{localStorage.setItem('nav',ouvert?'open':'closed')}catch(e){}
+    sync();
+  });
+})();
+</script>
+</body>
+</html>
