@@ -80,9 +80,13 @@ a{-webkit-tap-highlight-color:transparent}
 
 /* ---------- Navigation, en haut à droite ---------- */
 .rail{
-  position:relative;
   display:flex;flex-direction:column;align-items:flex-start;gap:.15rem;
-  margin-bottom:clamp(2rem,6vw,4rem);
+  position:sticky;top:0;z-index:2;
+  background:var(--papier);
+  padding-top:var(--pas);
+  margin-top:calc(-1 * var(--pas));
+  padding-bottom:.85rem;
+  margin-bottom:clamp(1.5rem,5vw,3.5rem);
 }
 @media (min-width:56rem){.rail{align-items:flex-end}}
 
