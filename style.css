@@ -241,8 +241,7 @@ a{-webkit-tap-highlight-color:transparent}
 
 /* ---------- Page About ---------- */
 .propos-corps{display:grid;gap:clamp(1.75rem,4vw,3.5rem);grid-template-columns:1fr}
-@media (min-width:60rem){.propos-corps{grid-template-columns:minmax(0,1.5fr) minmax(0,1fr)}}
-.propos-corps p{margin:0 0 1.1rem;max-width:60ch}
+.propos-corps p{margin:0 0 1.1rem;max-width:68ch}
 
 .parcours{margin:0;font-size:.95rem}
 .parcours ul{margin:0;padding:0}
@@ -251,6 +250,7 @@ a{-webkit-tap-highlight-color:transparent}
 .parcours .lieu{color:var(--gris)}
 
 .portrait{margin:0;max-width:20rem}
+.flanc .portrait{max-width:100%}
 .portrait .cadre{aspect-ratio:3/4}
 
 .adresses{display:grid;gap:.4rem;grid-template-columns:1fr;max-width:32rem}
