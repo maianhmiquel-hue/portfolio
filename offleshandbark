@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ALICE MIQUEL</title>
+<meta name="description" content="Of Flesh and Bark, a group exhibition of four young women artists and designers working with devalued living materials, Césure, Paris.">
+<meta property="og:title" content="ALICE MIQUEL">
+<meta property="og:description" content="Of Flesh and Bark, 2026, group exhibition.">
+<meta property="og:type" content="article">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="icon" href="favicon.png" sizes="any">
+<link rel="apple-touch-icon" href="favicon.png">
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<div class="armature">
+
+  <!-- ================= COLONNE DE GAUCHE ================= -->
+  <header class="flanc">
+    <h1 class="nom">
+      <a href="index.html"><span>Alice</span><span>Miquel</span></a>
+    </h1>
+
+    <div class="fiche-infos">
+      <p>2026</p>
+      <p>Group exhibition</p>
+      <p>Curated with Olympe Lopparelli</p>
+    </div>
+
+    <div class="fiche-infos">
+      <p>Césure, Paris 5</p>
+      <p>20 to 23 October 2026</p>
+    </div>
+
+    <div class="fiche-infos">
+      <p>Original title, De chair et d'écorce</p>
+    </div>
+  </header>
+
+  <!-- ================= COLONNE DE DROITE ================= -->
+  <div class="corps">
+
+    <div class="rail avec-titre">
+      <h2 class="fiche-titre">Of Flesh and Bark</h2>
+      <div class="bloc-nav">
+        <nav class="menu" aria-label="Main navigation">
+          <a href="index.html" class="actif">Work</a>
+          <a href="about.html">About</a>
+        </nav>
+        <nav class="menu-second toujours" aria-label="Back">
+          <a href="curating.html">Back</a>
+        </nav>
+      </div>
+    </div>
+
+    <main>
+
+      <!-- Image d'ouverture -->
+      <figure class="planche ouverture">
+        <span class="cadre">
+          <img src="images/flesh-bark-01.jpg" alt="" onerror="this.classList.add('absente')">
+          <span class="consigne">Add images/flesh-bark-01.jpg</span>
+        </span>
+      </figure>
+
+      <div class="fiche-texte">
+        <p>Between flesh and bark lies the skin, the surface where a body, animal or vegetal, protects itself, exposes itself and eventually comes undone. The exhibition brings together four young women artists and designers whose practices work on these envelopes, real or simulated, from modest or devalued materials: grass pulled from gardens and pavements, petals and paper, fish skins collected in fishmongers, latex shaped in the image of decomposing flesh. All of them hold a marginal place in production circuits, judged harmful, fragile, repellent or simply without use.</p>
+
+        <p>Their work reflects the growing attention that art and design pay to the living. Each material carries a provenance, a body or a place, and shaping it belongs to a relationship rather than to a simple transformation. Like skin, the pieces stand between the living and the inert, the organism and the object, attraction and disgust. A scale, a dried petal or a blade of grass remains identifiable, and the eye hesitates between recognising a remnant and discovering a form. Within that hesitation, another way of considering the living takes shape, attentive to its past as much as to its becoming.</p>
+
+        <p>The four practices share a recourse to long-established skills, straw marquetry, basketry, embroidery and tapestry, whose precision is applied here to materials usually kept out of sight. This displacement questions the value of materials and ties it to the attention they are given rather than to their rarity. Between design, craft and art, the exhibition invites a consideration of an unstable, organic and at times uncomfortable beauty, held at a distance from the criteria of regularity and mastery on which industrial production rests.</p>
+
+        <p>Apolline Berraud works paper, flowers and plants with traditional textile techniques, spiral basketry, embroidery and marquetry of hydrangea and camellia petals, composing headdresses, helmets, jars and dresses that stand between function and fiction. Charlotte Donnay moulds and casts latex on knit, muslin, lace and leather, then works it with salt, dye and puff paint, adorning decomposing matter with lace, beads and braid. Lola Loup stabilises fish skins collected in Parisian fishmongers, keeping the stains, holes and scars left by the life of the animal, and gives them volume through tapestry and moulding. Clarisse Yven gathers couch grass from gardens and pavements and turns it, through straw marquetry, weaving and natural dyeing, into furnishing surfaces whose dyed strands catch the light according to the angle of the gaze.</p>
+      </div>
+
+      <!-- Images de fin. Dupliquer un bloc <figure> par image. -->
+      <div class="serie">
+
+        <figure class="planche">
+          <span class="cadre">
+            <img src="images/flesh-bark-02.jpg" alt="" onerror="this.classList.add('absente')">
+            <span class="consigne">Add images/flesh-bark-02.jpg</span>
+          </span>
+        </figure>
+
+        <figure class="planche">
+          <span class="cadre">
+            <img src="images/flesh-bark-03.jpg" alt="" onerror="this.classList.add('absente')">
+            <span class="consigne">Add images/flesh-bark-03.jpg</span>
+          </span>
+        </figure>
+
+        <figure class="planche">
+          <span class="cadre">
+            <img src="images/flesh-bark-04.jpg" alt="" onerror="this.classList.add('absente')">
+            <span class="consigne">Add images/flesh-bark-04.jpg</span>
+          </span>
+        </figure>
+
+      </div>
+
+    </main>
+
+  </div>
+
+</div>
+</body>
+</html>
